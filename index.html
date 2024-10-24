@@ -9,14 +9,16 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
         :root {
-
-    --fonte-conteudo:'Montserrat';
-    --fonte-titulo: "DynaPuff", system-ui;
-
+            --fonte-conteudo: 'Montserrat';
+            --fonte-titulo: "DynaPuff", system-ui;
         }
 
+        /* Garantir que o body ocupe toda a tela e use flexbox */
         body {
-            height: 97vh;
+            min-height: 97vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             background-image: url(imagens/tipos-de-samambaia-interna-2.jpg);
             background-color: rgba(0, 0, 0, 0.493);
             font-family: var(--fonte-conteudo);
@@ -25,11 +27,11 @@
             background-size: cover;
         }
 
+        /* Manter o conteúdo centralizado e ocupar o restante da tela */
         main {
             background-color: #FFFCF7;
             width: 450px;
             margin: auto;
-            margin-bottom: 10px;
             padding: 20px;
             border-radius: 20px;
             border: 1px solid #DAFDBA;
@@ -61,24 +63,6 @@
             background-color: #97BF04;
         }
 
-        footer {
-            background-color: #97BF04;
-            color: white;
-            padding: 5px;
-            line-height: 1.5;
-            text-align: center;
-            font-size: 0.9em;
-        }
-
-        footer a {
-    color: #DAFDBA;
-    text-decoration: underline;
-        }
-
-        footer a:hover {
-        text-decoration: underline; 
-        }
-
     </style>
 </head>
 <body>
@@ -89,8 +73,5 @@
         <p>outra característica bacana da samambaia é que ela é super fácil de cuidar. <strong>se adapta bem a diferentes níveis de luz e só precisa de algumas regas para se manter saudável</strong>. é perfeita para quem tem uma rotina corrida, mas ainda quer trazer um pouco da natureza para dentro de casa.</p>
         <p><strong>ter uma samambaia por perto é como ter um pedacinho de frescor e vitalidade, tornando o espaço ainda mais especial!</strong></p>
     </main>  
-    <footer>
-        <p>© 2024 todos os direitos reservados. site desenvolvido por <a href="https://www.instagram.com/amamdastein/">amanda stein</a>.</p>
-    </footer>  
 </body>
 </html>
