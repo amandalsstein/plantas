@@ -9,29 +9,25 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
         :root {
-            --fonte-conteudo: 'Montserrat';
-            --fonte-titulo: "DynaPuff", system-ui;
+    --fonte-conteudo:'Montserrat';
+    --fonte-titulo: "DynaPuff", system-ui;
         }
 
-        /* Garantir que o body ocupe toda a tela e use flexbox */
         body {
-            min-height: 97vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            height: 97vh;
             background-image: url(imagens/tipos-de-samambaia-interna-2.jpg);
-            background-color: rgba(0, 0, 0, 0.493);
+            background-color: #0000007e;
             font-family: var(--fonte-conteudo);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
         }
 
-        /* Manter o conteúdo centralizado e ocupar o restante da tela */
         main {
             background-color: #FFFCF7;
             width: 450px;
             margin: auto;
+            margin-bottom: 10px;
             padding: 20px;
             border-radius: 20px;
             border: 1px solid #DAFDBA;
@@ -61,6 +57,24 @@
             color: white;
             font-weight: bold;
             background-color: #97BF04;
+        }
+
+        footer {
+            background-color: #97BF04;
+            color: white;
+            padding: 5px;
+            line-height: 1.5;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        footer a {
+    color: #DAFDBA;
+    text-decoration: underline;
+        }
+
+        footer a:hover {
+        text-decoration: underline; 
         }
 
     </style>
