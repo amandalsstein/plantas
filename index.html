@@ -12,20 +12,27 @@
     --fonte-conteudo:'Montserrat';
     --fonte-titulo: "DynaPuff", system-ui;
         }
+        .destaque {
+            color: #FFFCF7;
+            background-color:rgba(150, 191, 4, 0.781);
+            font-weight: bold;
+            text-align: center;
+            border: 2px solid #96bf041e;
+            padding: 18px;
+            margin: 10px;
+            border-radius: 20px;
+        }
 
         body {
             height: 97vh;
-            background-image: url(imagens/tipos-de-samambaia-interna-2.jpg);
-            background-color: #0000007e;
-            font-family: var(--fonte-conteudo);
-            background-position: center center;
-            background-repeat: no-repeat;
+            background:#97BF04 url('imagens/tipos-de-samambaia-interna-2.jpg') center center no-repeat fixed;
             background-size: cover;
+            font-family: var(--fonte-conteudo);
         }
 
         main {
             background-color: #FFFCF7;
-            width: 450px;
+            max-width: 400px;
             margin: auto;
             margin-bottom: 10px;
             padding: 20px;
@@ -42,7 +49,7 @@
         }
 
         main p {
-            text-align: justify;
+            text-align: left;
             line-height: 1.5;
         }
 
@@ -54,29 +61,21 @@
         }
 
         main strong {
-            color: white;
-            font-weight: bold;
-            background-color: #97BF04;
-        }
+            color: #97BF04;
 
-        footer {
-            background-color: #97BF04;
-            color: white;
-            padding: 5px;
-            line-height: 1.5;
-            text-align: center;
-            font-size: 0.9em;
+
         }
+        
     </style>
 </head>
 <body>
     <main>
-        <h1>samambaia</h1>
+        <h1>SAMAMBAIA</h1>
         <h2>vida e frescor em casa</h2>
-        <p>a samambaia é uma planta que traz um charme especial para qualquer lugar! com suas folhas longas e delicadas, ela embeleza o ambiente e cria uma <strong>sensação de aconchego e tranquilidade</strong>. essa plantinha transforma um espaço comum em um cantinho agradável e aconchegante.</p>
-        <p>outra característica bacana da samambaia é que ela é super fácil de cuidar. <strong>se adapta bem a diferentes níveis de luz e só precisa de algumas regas para se manter saudável</strong>. é perfeita para quem tem uma rotina corrida, mas ainda quer trazer um pouco da natureza para dentro de casa.</p>
-        <p><strong>ter uma samambaia por perto é como ter um pedacinho de frescor e vitalidade, tornando o espaço ainda mais especial!</strong></p>
-        <p>Culturalmente, a samambaia simboliza resiliência e renovação, uma vez que suas folhas se regeneram a cada estação. Essa simbologia a torna uma escolha popular para decoração, trazendo um toque natural e fresco.</p> <p>Além disso, a planta pode ser utilizada em arranjos florais, oferecendo um aspecto rústico, e é uma excelente opção para jardins verticais.</p>
+        <p>a samambaia é uma planta que traz um charme especial para qualquer lugar! <strong>com suas folhas longas e delicadas</strong>, ela embeleza o ambiente e cria uma sensação de <strong>aconchego e tranquilidade.</strong>   <p class="destaque">essa plantinha transforma qualquer espaço comum em um cantinho agradável e confortável!</p>
+        <p>outra característica bacana da samambaia é que ela é <strong>super fácil de cuidar</strong>. se adapta bem a diferentes níveis de luz e <strong>só precisa de algumas regas para se manter saudável</strong>. é perfeita para quem tem uma rotina corrida, mas ainda quer trazer um pouco da <strong>natureza para dentro de casa.</strong>
+        <p class="destaque" >ter uma samambaia por perto é como ter um pedacinho de frescor e vitalidade, tornando o espaço ainda mais especial.</p>
+        <p>culturalmente, a samambaia simboliza <strong>resiliência e renovação</strong>, uma vez que suas folhas se regeneram a cada estação. essa simbologia a torna uma <strong>escolha popular para decoração</strong>, trazendo um <strong>toque natural e fresco</strong>.</p> <p>além disso, a planta pode ser utilizada em arranjos florais, oferecendo um <strong>aspecto rústico</strong>, e é uma excelente opção para <strong>jardins verticais</strong>.</p>
     </main>  
 </body>
 </html>
